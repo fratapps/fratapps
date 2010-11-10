@@ -1,0 +1,73 @@
+<div id="featured_wrapper_outside">
+	<div id="content_wrapper">
+		<h1>New task</h1>
+		<%= form_for(@task) do |f| %>
+			<div class="field">
+				<%= f.label :name %>
+				<%= f.text_field :name %>
+			</div>
+			<div class="field">
+				<%= f.label :description %>
+				<%= f.text_area :description, :rows => 3 %>
+			</div>
+			<div class="field">
+				<%= f.label :points %>
+				<%= f.text_field :points %>
+			</div>
+			<div class="field">
+				<%= hidden_field_tag :initial_instance_count, @instance_count %>
+				<%= label_tag :instance_count %>
+				<%= select_tag :instance_count, options_for_select(1..10, @instance_count) %>
+				<%= submit_tag "Update Instance Count" %>
+			</div>
+			
+			<% for n in 1..@instance_count do %>
+				
+			<%= field_set_tag 'task_instance' + n.to_s do %>
+				<p>
+					<%= label_tag :open_task? %>
+					<%= check_box_tag 'open_task_' + n.to_s, "1", true %>
+					
+					<label>Assign To: </label>
+					<%= select_tag 'task_instance_' + n.to_s + "[user_id]", options_for_select(@users) %>
+				</p>
+				<hr/>
+				<p>
+					<label id=<%= 'due_date_label_' + n.to_s %>>Due Date: </label>
+					<%= date_select :complete_on, :order => [:month, :day, :year] %>
+				</p>
+				<hr/>
+				<p>
+					<%= label_tag :recurring_task? %>
+					<%= check_box_tag 'recurring_task_' + n.to_s, "1", false %>
+				</p>
+				<p>
+					<label>Due Every:</label>
+			
+					<%= check_box_tag 'recur_Su_' + n.to_s, "1", false %>Sunday		
+					<%= check_box_tag 'recur_Mo_' + n.to_s, "1", false %>Monday
+					<%= check_box_tag 'recur_Tu_' + n.to_s, "1", false %>Tuesday
+					<%= check_box_tag 'recur_We_' + n.to_s, "1", false %>Wednesday
+					<%= check_box_tag 'recur_Th_' + n.to_s, "1", false %>Thursday
+					<%= check_box_tag 'recur_Fr_' + n.to_s, "1", false %>Friday
+					<%= check_box_tag 'recur_Sa_' + n.to_s, "1", false %>Saturday
+				</p>
+				<p>
+					<label>Until:</label>
+					<%= date_select 'recur_to_' + n.to_s, :order => [:month, :day, :year] %>
+					<label>(Inclusive)</label>
+				</p>
+			
+			</fieldset>
+			<% end %>
+			<% end %>
+			<div class="actions">
+				<%= f.submit %>
+			</div>
+		<% end %>
+		
+		<%= link_to 'All Tasks', tasks_path %>
+		
+	</div>
+</div>
+

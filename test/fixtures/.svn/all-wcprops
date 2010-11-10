@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/fratapps_fratapps/!svn/ver/1/test/fixtures
+END
+groups.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/fratapps_fratapps/!svn/ver/1/test/fixtures/groups.yml
+END
+poll_questions.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/fratapps_fratapps/!svn/ver/1/test/fixtures/poll_questions.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/fratapps_fratapps/!svn/ver/1/test/fixtures/users.yml
+END
+tasks.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/fratapps_fratapps/!svn/ver/1/test/fixtures/tasks.yml
+END
+poll_votes.yml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/fratapps_fratapps/!svn/ver/1/test/fixtures/poll_votes.yml
+END
+sessions.yml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/fratapps_fratapps/!svn/ver/1/test/fixtures/sessions.yml
+END
+poll_answers.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/fratapps_fratapps/!svn/ver/1/test/fixtures/poll_answers.yml
+END
+task_instances.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/fratapps_fratapps/!svn/ver/1/test/fixtures/task_instances.yml
+END
+points.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/fratapps_fratapps/!svn/ver/1/test/fixtures/points.yml
+END

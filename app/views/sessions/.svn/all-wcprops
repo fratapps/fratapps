@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/fratapps_fratapps/!svn/ver/1/app/views/sessions
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/fratapps_fratapps/!svn/ver/1/app/views/sessions/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/fratapps_fratapps/!svn/ver/1/app/views/sessions/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/fratapps_fratapps/!svn/ver/1/app/views/sessions/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/fratapps_fratapps/!svn/ver/1/app/views/sessions/show.html.erb
+END

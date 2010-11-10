@@ -1,0 +1,115 @@
+.app {
+  border-top: 1px solid gray;
+}
+
+#signup {
+   position: absolute;
+   margin-left: 730px;
+   margin-top: 260px;
+
+}
+
+#tryit {
+   position: absolute;
+   margin-left: 490px;
+   margin-top: 260px;
+
+}
+
+#details {
+   background: white;
+   position: relative;
+   min-height: 300px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+
+}
+
+#details_wrapper {
+	margin: 0px;
+	padding: 0px;
+	padding-left: 16px;
+	padding-right: 16px;
+
+}
+
+#details h1 {
+
+	text-align: center;
+	font-weight: lighter;
+	display: inline;
+	
+}
+#details h2 {
+	text-align: center;
+	font-weight: lighter;
+	display: inline;
+
+}
+
+#details h3 {
+	text-align: center;
+	display: inline;
+	
+
+}
+
+#phone {
+	text-align: center;
+	padding: 10px;
+	margin-top: 10px;
+
+}
+
+#socialmedia {
+	border-top:1px solid #DEDDE7;
+	clear:both;
+	padding: 2px;
+	margin-top:18px;
+	padding-top:17px;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+.blog_left{
+	position: absolute;
+	margin-right:24px;
+	padding-right:25px;
+	width: 320px;
+	
+}
+
+.twitter_middle {
+	position: absolute;
+	border-right:1px solid #EFEEF6;
+        border-left:1px solid #EFEEF6;
+        width: 320px;	
+        margin-left: 320px;
+        padding: 10px;
+
+}
+
+.facebook_right {
+	position: absolute;
+	width: 320px;
+        margin-left: 670px;      
+	
+}
+
+ {
+	
+	margin: 0px;
+	padding: 0px;
+	color: #FF9900;
+}
+
+ h3{
+	margin: 0px;
+	padding: 0px;
+	
+}

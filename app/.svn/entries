@@ -1,0 +1,43 @@
+10
+
+dir
+4
+http://fratapps.unfuddle.com/svn/fratapps_fratapps/app
+http://fratapps.unfuddle.com/svn/fratapps_fratapps
+
+
+
+2010-11-01T08:02:17.101505Z
+3
+rishi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03c2b177-be74-47bb-b0b8-a4061e9c3339
+
+helpers
+dir
+
+models
+dir
+
+controllers
+dir
+
+mailers
+dir
+
+views
+dir
+

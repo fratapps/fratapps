@@ -1,0 +1,73 @@
+<tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <% if fields.include?("name") %>
+    <td>
+        <%=h task_instance.task.name %>
+    </td>
+    <% end %>
+    <% if fields.include?("description") %>
+    <td>
+        <%=h task_instance.task.description %>
+    </td>
+    <% end %>
+    <% if fields.include?("created_by_id") %>
+    <td>
+        <%=h User.find(task_instance.task.created_by_id).name %>
+    </td>
+    <% end %>
+	<% if fields.include?("user") %>
+	<td>
+		<%=h User.find(task_instance.user_id).name %>
+	</td>
+	<% end %>
+    <% if fields.include?("created_at") %>
+    <td>
+        <%=h task_instance.task.created_at.strftime("%m-%d-%y") %>
+    </td>
+    <% end %>
+    <% if fields.include?("taken_on") %>
+    <td>
+        <%=h task_instance.taken_on.strftime("%m-%d-%y") %>
+    </td>
+    <% end %>
+    <% if fields.include?("complete_on") %>
+    <td>
+        <%=h task_instance.complete_on.strftime("%m-%d-%y") if task_instance.complete_on %>
+    </td>
+    <% end %>
+    <% if fields.include?("status") %>
+    <td>
+    	<% if fields.include?("replace_status_with_submit_for_approval") and task_instance.status == 'taken' %>
+			<%= link_to "Submit for Approval", :action => 'submit_for_approval', :id => task_instance %>
+		<% elsif fields.include?("replace_status_with_submit_for_approval") and task_instance.status == 'unfinished' %>
+			<%= link_to "Unfinished, Resubmit for Approval", :action => 'submit_for_approval', :id => task_instance %>	
+		<% else %>
+        	<%=h task_instance.status %>
+		<% end %>
+    </td>
+    <% end %>
+    <% if fields.include?("points") %>
+    <td class="points">
+        <%=h task_instance.task.points %>
+    </td>
+    <% end %>
+    <% if fields.include?("take_btn") %>
+    <td>
+        <%= link_to "Take", :action => "take", :id => task_instance %>
+    </td>
+    <% end %>
+    <% if fields.include?("abandon_btn") && task_instance.status != 'finished' %>
+    <td>
+        <%= link_to "Abandon", :action => "abandon", :id => task_instance %>
+    </td>
+    <% end %>
+	<% if fields.include?("finished_btn") %>
+	<td>
+		<%= link_to "Finished", :controller => "tasks", :method => "POST", :action => "finished", :id => task_instance.id %>
+	</td>
+	<% end %>
+	<% if fields.include?("unfinished_btn") %>
+	<td>
+		<%= link_to "Unfinished", :controller => 'tasks', :method => "POST", :action => 'unfinished', :id => task_instance.id %>
+	</td>
+	<% end %>
+</tr>

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers
+END
+about_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/about_controller.rb
+END
+contact_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/contact_controller.rb
+END
+groups_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/groups_controller.rb
+END
+poll_questions_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/poll_questions_controller.rb
+END
+users_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/users_controller.rb
+END
+application_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/application_controller.rb
+END
+tasks_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/tasks_controller.rb
+END
+poll_votes_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/poll_votes_controller.rb
+END
+sessions_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/sessions_controller.rb
+END
+dashboard_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/dashboard_controller.rb
+END
+help_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/help_controller.rb
+END
+home_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/home_controller.rb
+END
+poll_answers_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/poll_answers_controller.rb
+END
+tour_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/fratapps_fratapps/!svn/ver/1/app/controllers/tour_controller.rb
+END

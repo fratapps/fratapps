@@ -1,0 +1,44 @@
+#about {
+	margin: 0px;
+	padding: 0px;
+	padding-left: 16px;
+	padding-right: 16px;
+
+}
+
+#team {
+	border-top:1px solid #DEDDE7;
+	clear:both;
+	padding: 2px;
+	margin-top:18px;
+	padding-top:17px;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+.left {
+border-right:1px solid #EFEEF6;
+float:left;
+margin-right:24px;
+padding-right:25px;
+width: 436px;
+}
+
+.right {
+	width: 436px;
+	float: left;
+	
+}
+
+ {
+	
+	margin: 0px;
+	padding: 0px;
+	color: #FF9900;
+}
+
+ h3{
+	margin: 0px;
+	padding: 0px;
+	
+}

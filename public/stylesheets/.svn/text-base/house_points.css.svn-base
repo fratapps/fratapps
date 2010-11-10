@@ -1,0 +1,25 @@
+#availableTasks, #leaderboard, #yourTasks {
+  padding: 5px;
+}
+
+#availableTasks, #pendingTasks, #yourTasks {
+  margin-bottom: 30px;
+}
+
+#content {
+	overflow: hidden;
+}
+
+#content h2 {
+  margin: 3px;
+}
+
+#leaderboard {
+  float: right;
+  margin-left: 50px;
+  text-align: center;
+}
+
+td.points {
+  font-weight: bold;
+}

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/fratapps_fratapps/!svn/ver/4/log
+END
+test.log
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/fratapps_fratapps/!svn/ver/1/log/test.log
+END
+development.log
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/fratapps_fratapps/!svn/ver/4/log/development.log
+END
+production.log
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/fratapps_fratapps/!svn/ver/1/log/production.log
+END
+server.log
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/fratapps_fratapps/!svn/ver/1/log/server.log
+END

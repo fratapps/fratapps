@@ -1,0 +1,19 @@
+<div id="featured_wrapper_outside">
+	<div id="content_wrapper">
+		<div>
+			<h3>My Points: <%= current_user.points.points %></h3>
+			<h2>Leaderboard</h2>
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Points</th>
+				</tr>
+		
+				<%= render(:partial => "user", :collection => @leaderboard_users) %>
+			</table>
+		
+			<%= link_to "Go Back", dashboard_path %>
+		</div>			
+	</div>
+</div>
+

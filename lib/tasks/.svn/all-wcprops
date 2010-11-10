@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/fratapps_fratapps/!svn/ver/1/lib/tasks
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/fratapps_fratapps/!svn/ver/1/lib/tasks/.gitkeep
+END
+seed_admin.rake
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/fratapps_fratapps/!svn/ver/1/lib/tasks/seed_admin.rake
+END

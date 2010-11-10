@@ -1,0 +1,30 @@
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Total points</th>
+    <th>Permission level</th>
+    <th>Email</th>
+    <th>Group</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  
+<ul class="users">
+<% @users.each do |user| %>
+  <li>
+  	<%= link_to user.name, user %>
+  	<% if current_user.admin? %>
+  	| <%= link_to "Delete", user, :method => :delete, :confirm => "Are you sure you want to delete?", :title => "Delete #{user.name}" %>
+  	<% end %>
+  </li>
+<% end %>
+</ul>
+
+</table>
+
+<br />
+
+<%= link_to 'New User', new_user_path %>

@@ -1,0 +1,101 @@
+<div id="featured_wrapper_outside">
+	<div id="content_wrapper">
+		<div id="leaderboard">
+			<h3>My Points: <%= current_user.points.points %></h3>
+			<h2>Leaderboard</h2>
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Points</th>
+				</tr>
+			
+			<%= render(:partial => "user", :collection => @leaderboard_users) %>
+			</table>
+			
+			<%= link_to "Full Board", dashboard_leaderboard_path %>
+		</div>
+		  
+		<div id="yourTasks">
+
+			<% unless @user_task_instances.empty? %>
+			<h2>Your Tasks</h2>
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Created by</th>
+					<th>Taken on</th>
+					<th>Complete on</th>
+					<th>Status</th>
+					<th>Points</th>
+				</tr>
+				
+				<% fields = ["name", "description", "created_by_id", "taken_on", "complete_on",
+						   "status", "points", "replace_status_with_submit_for_approval"] %>
+				<%= render(:partial => "task_instance", :collection => @user_task_instances, :locals => { :fields => fields }) %>
+			</table>
+			<% end %>
+		  
+			<a href="">Propose Task</a>
+		</div>
+
+		<div id="availableTasks">  
+
+			<% unless @open_task_instances.empty? %>
+			<h2>Available Tasks</h2>
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Created By</th>
+					<th>Points</th>
+					<th>Complete on</th>
+					<th>Status</th>
+					<th>Created On</th>
+				</tr>
+			
+				<% fields = ["name", "description", "created_by_id", "created_at", "complete_on", "points", "take_btn"] %> 
+				<%= render(:partial => "task_instance", :collection => @open_task_instances, :locals => { :fields => fields }) %>
+			</table>
+			<% end %>
+		  
+		  	<% if current_user.admin? %>
+		  		<%= link_to "View all tasks" %>
+		  		<%= link_to "New Task", tasks_new_path %>
+		  	<% end %>
+		</div>
+
+		<% if current_user.admin? or current_user.super_admin? %>
+		<div id="pendingTasks">
+			<% unless @pending_task_instances.empty? %>
+			<h2>Pending Tasks</h2>
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Created by</th>
+					<th>User</th>
+					<th>Taken on</th>
+					<th>Complete on</th>
+					<th>Points</th>
+				</tr>
+				<% fields = ["name", "description", "created_by_id", "user", "taken_on",
+					   "complete_on", "points", "finished_btn", "unfinished_btn"] %>
+				<%= render(:partial => "task_instance", :collection => @pending_task_instances,
+					 :locals => { :fields => fields }) %>
+			</table>
+			<% end %>
+			<h2>No Pending Tasks</h2>
+		</div>
+			
+		<div id="overdueTasks">
+			<% if @overdue_task_instances.size > 0 %>
+				<h2>Overdue Tasks</h2>	
+			<% else %>
+				<h2 style="text-decoration: line-through;">No Overdue Tasks</h2>
+			<% end %>
+		</div>
+		<% end %>			
+
+	</div>
+</div>

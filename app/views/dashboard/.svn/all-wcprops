@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/fratapps_fratapps/!svn/ver/1/app/views/dashboard
+END
+_task_instance.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/fratapps_fratapps/!svn/ver/1/app/views/dashboard/_task_instance.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/fratapps_fratapps/!svn/ver/1/app/views/dashboard/index.html.erb
+END
+admin.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/fratapps_fratapps/!svn/ver/1/app/views/dashboard/admin.html.erb
+END
+_user.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/fratapps_fratapps/!svn/ver/1/app/views/dashboard/_user.html.erb
+END
+user.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/fratapps_fratapps/!svn/ver/1/app/views/dashboard/user.html.erb
+END
+leaderboard.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/fratapps_fratapps/!svn/ver/1/app/views/dashboard/leaderboard.html.erb
+END

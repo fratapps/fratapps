@@ -1,0 +1,9 @@
+<tr>
+	<td><%= task.name %></td>
+	<td><%= task.description %></td>
+	<td><%= task.created_by_id %></td>
+	<td><%= task.points %></td>
+	<td><%= task.taken_by_id %></td>
+	<td><%= task.status %></td>
+	<td><%= task.taken_on %></td>
+</tr>

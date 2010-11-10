@@ -1,0 +1,24 @@
+<h1>Editing poll_vote</h1>
+
+<% form_for(@poll_vote) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :poll_question_id %><br />
+    <%= f.text_field :poll_question_id %>
+  </p>
+  <p>
+    <%= f.label :poll_answer_id %><br />
+    <%= f.text_field :poll_answer_id %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @poll_vote %> |
+<%= link_to 'Back', poll_votes_path %>

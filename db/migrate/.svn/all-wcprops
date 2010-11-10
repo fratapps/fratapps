@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/fratapps_fratapps/!svn/ver/1/db/migrate
+END
+20100828154739_create_task_instances.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/fratapps_fratapps/!svn/ver/1/db/migrate/20100828154739_create_task_instances.rb
+END
+20100828053522_create_poll_votes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/fratapps_fratapps/!svn/ver/1/db/migrate/20100828053522_create_poll_votes.rb
+END
+20100828053236_create_poll_answers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/fratapps_fratapps/!svn/ver/1/db/migrate/20100828053236_create_poll_answers.rb
+END
+20100904052318_create_groups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/fratapps_fratapps/!svn/ver/1/db/migrate/20100904052318_create_groups.rb
+END
+20100919214757_create_tasks.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/fratapps_fratapps/!svn/ver/1/db/migrate/20100919214757_create_tasks.rb
+END
+20100828053353_create_poll_questions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/fratapps_fratapps/!svn/ver/1/db/migrate/20100828053353_create_poll_questions.rb
+END
+20100904053447_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/fratapps_fratapps/!svn/ver/1/db/migrate/20100904053447_create_users.rb
+END
+20100917050447_add_admin_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/fratapps_fratapps/!svn/ver/1/db/migrate/20100917050447_add_admin_to_users.rb
+END
+20100905052438_add_email_uniqueness_index.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/fratapps_fratapps/!svn/ver/1/db/migrate/20100905052438_add_email_uniqueness_index.rb
+END
+20100929031738_create_points.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/fratapps_fratapps/!svn/ver/1/db/migrate/20100929031738_create_points.rb
+END
+20100828054501_create_sessions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/fratapps_fratapps/!svn/ver/1/db/migrate/20100828054501_create_sessions.rb
+END

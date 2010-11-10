@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  task_id: 1
+  user_id: 1
+  status: MyString
+  taken_on: 2010-08-28
+  complete_on: 2010-08-28
+
+two:
+  task_id: 1
+  user_id: 1
+  status: MyString
+  taken_on: 2010-08-28
+  complete_on: 2010-08-28

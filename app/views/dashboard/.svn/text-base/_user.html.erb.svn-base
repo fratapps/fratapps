@@ -1,0 +1,4 @@
+<tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+  <td><%= user.name %></td>
+  <td><%= user.points.points %></td>
+</tr>

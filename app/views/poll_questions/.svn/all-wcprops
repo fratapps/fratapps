@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/fratapps_fratapps/!svn/ver/1/app/views/poll_questions
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/fratapps_fratapps/!svn/ver/1/app/views/poll_questions/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/fratapps_fratapps/!svn/ver/1/app/views/poll_questions/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/fratapps_fratapps/!svn/ver/1/app/views/poll_questions/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/fratapps_fratapps/!svn/ver/1/app/views/poll_questions/show.html.erb
+END

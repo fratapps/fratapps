@@ -1,0 +1,24 @@
+<h1>Listing poll_questions</h1>
+
+<table>
+  <tr>
+    <th>Question</th>
+    <th>Max responses</th>
+    <th>Created by</th>
+  </tr>
+
+<% @poll_questions.each do |poll_question| %>
+  <tr>
+    <td><%=h poll_question.question %></td>
+    <td><%=h poll_question.max_responses %></td>
+    <td><%=h poll_question.created_by_id %></td>
+    <td><%= link_to 'Show', poll_question %></td>
+    <td><%= link_to 'Edit', edit_poll_question_path(poll_question) %></td>
+    <td><%= link_to 'Destroy', poll_question, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New poll_question', new_poll_question_path %>

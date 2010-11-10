@@ -1,0 +1,24 @@
+<h1>Listing poll_answers</h1>
+
+<table>
+  <tr>
+    <th>Answer</th>
+    <th>Vote count</th>
+    <th>Poll question</th>
+  </tr>
+
+<% @poll_answers.each do |poll_answer| %>
+  <tr>
+    <td><%=h poll_answer.answer %></td>
+    <td><%=h poll_answer.vote_count %></td>
+    <td><%=h poll_answer.poll_question_id %></td>
+    <td><%= link_to 'Show', poll_answer %></td>
+    <td><%= link_to 'Edit', edit_poll_answer_path(poll_answer) %></td>
+    <td><%= link_to 'Destroy', poll_answer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New poll_answer', new_poll_answer_path %>

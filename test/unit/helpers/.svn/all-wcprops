@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers
+END
+groups_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers/groups_helper_test.rb
+END
+poll_questions_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers/poll_questions_helper_test.rb
+END
+users_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers/users_helper_test.rb
+END
+tasks_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers/tasks_helper_test.rb
+END
+poll_votes_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers/poll_votes_helper_test.rb
+END
+sessions_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers/sessions_helper_test.rb
+END
+dashboard_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers/dashboard_helper_test.rb
+END
+help_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers/help_helper_test.rb
+END
+home_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers/home_helper_test.rb
+END
+poll_answers_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers/poll_answers_helper_test.rb
+END
+tour_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers/tour_helper_test.rb
+END
+about_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers/about_helper_test.rb
+END
+contact_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/fratapps_fratapps/!svn/ver/1/test/unit/helpers/contact_helper_test.rb
+END
