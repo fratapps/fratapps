@@ -15,9 +15,14 @@
 			
 			<%= link_to "Full Board", dashboard_leaderboard_path %>
 		</div>
-		  
+		
 		<div id="yourTasks">
-
+		<% if @user_task_instances.empty? %>
+		    <h2>Your Tasks</h2>	
+		    <div id="noTasks">
+			<h3 class="middleText">You do not have any new tasks. Get to work!</h3>
+		     </div>
+	 	<% else %>	
 			<% unless @user_task_instances.empty? %>
 			<h2>Your Tasks</h2>
 			<table>
@@ -36,12 +41,21 @@
 				<%= render(:partial => "task_instance", :collection => @user_task_instances, :locals => { :fields => fields }) %>
 			</table>
 			<% end %>
-		  
-			<a href="">Propose Task</a>
+		<% end %>			
 		</div>
 
 		<div id="availableTasks">  
+		<% if @open_task_instances.empty? %>
+			<h2>Available Tasks</h2>
+			    <div id="noTasks">
+				<h3 class="middleText">No tasks for members to take.
 
+		                <% if current_user.admin? %>
+			  		<%= link_to "Create New Task", tasks_new_path %>
+			  	<% end %>
+				</h3>
+			     </div>
+		<% else %>
 			<% unless @open_task_instances.empty? %>
 			<h2>Available Tasks</h2>
 			<table>
@@ -59,15 +73,21 @@
 				<%= render(:partial => "task_instance", :collection => @open_task_instances, :locals => { :fields => fields }) %>
 			</table>
 			<% end %>
-		  
+		  <% end %>
 		  	<% if current_user.admin? %>
-		  		<%= link_to "View all tasks" %>
 		  		<%= link_to "New Task", tasks_new_path %>
 		  	<% end %>
+		   			
 		</div>
 
 		<% if current_user.admin? or current_user.super_admin? %>
-		<div id="pendingTasks">
+		<% if @pending_task_instances.empty? %>
+			<div id="pendingTasks">
+			    <h2>Pending Tasks</h2>
+			    <div id="noTasks">
+				<h3 class="middleText">No tasks to mark complete. Tell your members to do work!</h3>
+			     </div>
+		<% else %>
 			<% unless @pending_task_instances.empty? %>
 			<h2>Pending Tasks</h2>
 			<table>
@@ -86,16 +106,9 @@
 					 :locals => { :fields => fields }) %>
 			</table>
 			<% end %>
-			<h2>No Pending Tasks</h2>
+		   <% end %>	
 		</div>
-			
-		<div id="overdueTasks">
-			<% if @overdue_task_instances.size > 0 %>
-				<h2>Overdue Tasks</h2>	
-			<% else %>
-				<h2 style="text-decoration: line-through;">No Overdue Tasks</h2>
-			<% end %>
-		</div>
+				
 		<% end %>			
 
 	</div>

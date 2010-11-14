@@ -32,9 +32,9 @@
 				
 				<div id="log_in">
 					<% if signed_in? %>
-						<h1>Welcome <%= current_user.name %> - <%= current_user.group.group_name %>!</h1>
-						<%= link_to "Dashboard", dashboard_path %>
-						<%= link_to "Sign out", signout_path, :method => :delete %>
+						<h1>Welcome, <%= current_user.name %> - <%= current_user.group.group_name %>! <%= link_to "Sign out", signout_path, :method => :delete %></h1>
+						
+						
 					<% else %>
 						<%= form_for(:session, :url => sessions_path) do |f| %>
 							<div id="field_email">
@@ -52,7 +52,13 @@
 					<% end %>
 				</div>
 				<div id="menu_wrapper">
-					<ul id="menu">	
+					<ul id="menu">
+					<% if signed_in? %>
+						<li>
+						<%= link_to "Dashboard", dashboard_path %>
+						</li>
+					<% else %>
+					<% end %>	
 						<li>
 							<%-# home_logo = image_tag("/images/menu_buttons/home.png", :alt => "Home", :border => 0) %>
 							<%= link_to "Home", root_path %>
@@ -74,7 +80,7 @@
 						</li>
 						
 						<li>
-							<%= link_to "Signup", signup_path %>
+							<%= link_to "Blog", signup_path %>
 						</li>
 					</ul>
 				</div>
