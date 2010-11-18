@@ -106,10 +106,11 @@ td {
 	width: 200px;
 }
 #tagline h2 {
-	padding-top: 18px;
+	padding-top: 25px;
 	color: #3399CC;
 	font-size: 2.0em;
-	width: 300px;
+	width: 400px;
+        height: 50px;
 }
 .one {
 	background: #B3DDFB url(/images/one.png) scroll 0 0;
