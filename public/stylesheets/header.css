@@ -17,7 +17,7 @@
 }
 
 #header_wrapper {
-	background: #3399CC url(/images/header_bg.png) repeat-x scroll 0 0;
+	background: #FFFFFF url(/images/header_bg.png) repeat-x scroll 0 0;
 	border-top: 1px solid #3399CC;
 }
 
@@ -45,6 +45,16 @@
 	font-weight: bold;
 	padding: 3px;
 	border: 3px solid #246A8D;
+}
+
+#login_inside h1 {
+	padding: 0px;
+	display: inline;
+	font-size: 16px;
+	margin-left: 300px;
+	margin-top: 150px;
+	
+	
 }
 
 #field_email {

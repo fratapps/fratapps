@@ -90,7 +90,8 @@
         border-left:1px solid #EFEEF6;
         width: 320px;	
         margin-left: 320px;
-        padding: 10px;
+        padding-left: 10px;
+	padding-right: 10px;
 
 }
 
@@ -101,7 +102,22 @@
 	
 }
 
- {
+#sub_description {
+	height: 100px;
+	width: 280px;
+	padding: 10px;
+	background-color: #F3F3FA;	
+	margin-top: 10px;
+	
+
+}
+
+#sub_description p {
+	font-size: 15px;
+
+}
+
+{
 	
 	margin: 0px;
 	padding: 0px;

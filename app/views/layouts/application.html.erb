@@ -32,9 +32,10 @@
 				
 				<div id="log_in">
 					<% if signed_in? %>
-						<h1>Welcome, <%= current_user.name %> - <%= current_user.group.group_name %>! <%= link_to "Sign out", signout_path, :method => :delete %></h1>
-						
-						
+						<div id="login_inside">
+							<h1>Welcome, <%= current_user.name %> - <%= current_user.group.group_name %>! </h1> <%= link_to "Logout", signout_path, :method => :delete %>	
+						</div>
+	
 					<% else %>
 						<%= form_for(:session, :url => sessions_path) do |f| %>
 							<div id="field_email">
