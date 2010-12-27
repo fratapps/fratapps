@@ -4,8 +4,18 @@ class DashboardController < ApplicationController
 	
 	def index
 		# Set the locals to be displayed in the tables
-		# All open tasks
-		@open_task_instances = TaskInstance.find(:all, :conditions => "status = 'open'")
+		# Open tasks for the group
+		# OLD printed all open tasks @open_task_instances = TaskInstance.find(:all, :conditions => "status = 'open'")
+		@open_task_instances = []
+		all_open_task_instances = TaskInstance.find(:all, :conditions => "status = 'open'")
+		for n in 0...all_open_task_instances.length
+			task_user = all_open_task_instances[n].task.created_by_id
+			user = User.find_by_id(task_user)
+			if current_user.group.eql? user.group
+				@open_task_instances.push all_open_task_instances[n]
+			end
+		end	
+		
 		# Tasks belonging to the logged in user
 		@user_task_instances = current_user.task_instances
 		# The top ten users for the leaderboard
