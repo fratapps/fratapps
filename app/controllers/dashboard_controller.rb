@@ -5,7 +5,6 @@ class DashboardController < ApplicationController
 	def index
 		# Set the locals to be displayed in the tables
 		# Open tasks for the group
-		# OLD printed all open tasks @open_task_instances = TaskInstance.find(:all, :conditions => "status = 'open'")
 		@open_task_instances = []
 		all_open_task_instances = TaskInstance.find(:all, :conditions => "status = 'open'")
 		for n in 0...all_open_task_instances.length
@@ -18,15 +17,29 @@ class DashboardController < ApplicationController
 		
 		# Tasks belonging to the logged in user
 		@user_task_instances = current_user.task_instances
+		
 		# The top ten users for the leaderboard
 		@leaderboard_users = current_user.group.users.all(:limit => 10)
 		@leaderboard_users.sort!{|a,b| b.points.points <=> a.points.points}
 		#@leaderboard_users = User.find(:all,
 		#  :order => "total_points desc, name",
 		#  :limit => 10)
+		
 		# Pending tasks for admins
-		@pending_task_instances = TaskInstance.find(:all, :conditions => "status = 'pending'") if current_user.admin? or current_user.super_admin?
-		# Overdue tasks for admins
+		if current_user.admin? or current_user.super_admin?
+			@pending_task_instances = []
+			all_pending_task_instances = TaskInstance.find(:all, :conditions => "status = 'pending'")
+			all_pending_task_instances.each do |ti|
+				task_user = ti.task.created_by_id
+				user = User.find_by_id(task_user)
+				if current_user.group.eql? user.group
+					@pending_task_instances.push ti
+				end
+			end
+		end
+		
+		
+		# TODO:Overdue tasks for admins
 		@overdue_task_instances = [] if current_user.admin? or current_user.super_admin?
   
 		if current_user.admin?
@@ -40,7 +53,6 @@ class DashboardController < ApplicationController
 	def leaderboard
 		# Set the local for the table
 		# All users sorted by points then name
-		#@leaderboard_users = User.find :all, :order => "total_points desc, name"
 		@leaderboard_users = current_user.group.users.all(:limit => 10)
 		@leaderboard_users.sort!{|a,b| b.points.points <=> a.points.points}
 	end

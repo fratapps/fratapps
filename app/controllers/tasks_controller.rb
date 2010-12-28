@@ -44,7 +44,7 @@ class TasksController < ApplicationController
 				end
 			end
 	
-			# Handle recurring tasks
+			# TODO Handle recurring tasks
 			if params['recurring_task_' + n.to_s]
 				# The first due date (given above)
 				@crawler = Date.civil(params['task_instance_' + n.to_s]['complete_on(1i)'].to_i,
@@ -98,7 +98,7 @@ class TasksController < ApplicationController
 		# Must happen after task_instances built so repopulation works
 		if params[:initial_instance_count] != params[:instance_count]
 			@instance_count = params[:instance_count].to_i
-			@users = User.find(:all, :order => "name")
+			@users = current_user.group.users
 			for i in 0...@users.length
 				@users[i] = @users[i].name
 			end
@@ -115,14 +115,16 @@ class TasksController < ApplicationController
 			flash[:notice] = 'Task created.'
 			redirect_to dashboard_path
 		else
+			@users = current_user.group.users
+			for i in 0...@users.length
+				@users[i] = @users[i].name
+			end
 			render 'new'
 		end
 	end
 	
 	
 	
-	# PUT /tasks/1
-	# PUT /tasks/1.xml
 	def update
 		@task = Task.find(params[:id])
 		
@@ -137,14 +139,15 @@ class TasksController < ApplicationController
 	end
 	
 	
-	# DELETE /tasks/1
-	# DELETE /tasks/1.xml
+	
 	def destroy
 		@task = Task.find(params[:id])
 		@task.destroy
 		
 		redirect_to tasks_url
 	end
+	
+	
 	
 	def finished
 
